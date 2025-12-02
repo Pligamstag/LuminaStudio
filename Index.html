@@ -260,7 +260,7 @@
         /* Services Section */
         .services-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
             gap: var(--spacing-md);
             margin-top: var(--spacing-lg);
         }
@@ -293,10 +293,24 @@
             margin-bottom: var(--spacing-sm);
         }
 
-        .service-description {
-            color: var(--text-secondary);
+        .service-features {
             margin-bottom: var(--spacing-md);
             flex-grow: 1;
+        }
+
+        .service-features p {
+            color: var(--text-secondary);
+            margin-bottom: 0.5rem;
+            font-size: 0.95rem;
+            display: flex;
+            align-items: flex-start;
+            gap: 0.5rem;
+        }
+
+        .service-features i {
+            color: var(--primary);
+            margin-top: 0.2rem;
+            flex-shrink: 0;
         }
 
         .service-price {
@@ -614,57 +628,111 @@
         <section id="services" class="page">
             <div class="container">
                 <h2 class="section-title fade-up">Nos <span>Services</span></h2>
-                <p class="section-subtitle fade-up">Choisissez le pack adapté à vos besoins. Des montages rapides aux productions premium.</p>
+                <p class="section-subtitle fade-up">Des packs adaptés à tous vos besoins, du montage TikTok au contenu YouTube premium.</p>
                 
                 <div class="services-grid">
                     <!-- Service 1 -->
                     <div class="service-card fade-up">
                         <div class="service-icon">
-                            <i class="fas fa-mobile-alt"></i>
+                            <i class="fas fa-rocket"></i>
                         </div>
-                        <h3 class="service-title">🎯 Pack TikTok / Shorts</h3>
-                        <p class="service-description">Montage rapide et dynamique, sous-titres stylés, transitions modernes, format vertical optimisé pour les réseaux sociaux.</p>
-                        <div class="service-price">10 à 20 €</div>
+                        <h3 class="service-title">🎯 Pack Découverte TikTok / Shorts</h3>
+                        <div class="service-features">
+                            <p><i class="fas fa-check"></i> 1 vidéo courte (15–30s)</p>
+                            <p><i class="fas fa-check"></i> Montage rapide et dynamique</p>
+                            <p><i class="fas fa-check"></i> Sous-titres stylés et transitions modernes</p>
+                            <p><i class="fas fa-check"></i> Format vertical parfait pour la viralité</p>
+                        </div>
+                        <div class="service-price">3 €</div>
                     </div>
                     
                     <!-- Service 2 -->
                     <div class="service-card fade-up">
                         <div class="service-icon">
-                            <i class="fab fa-youtube"></i>
+                            <i class="fas fa-mobile-alt"></i>
                         </div>
-                        <h3 class="service-title">🎬 Pack YouTube Standard</h3>
-                        <p class="service-description">Montage propre, cuts précis, musique, optimisation du rythme pour un contenu YouTube de qualité.</p>
-                        <div class="service-price">30 à 50 €</div>
+                        <h3 class="service-title">🎯 Pack TikTok / Shorts</h3>
+                        <div class="service-features">
+                            <p><i class="fas fa-check"></i> Montage rapide</p>
+                            <p><i class="fas fa-check"></i> Sous-titres stylés</p>
+                            <p><i class="fas fa-check"></i> Transitions modernes</p>
+                            <p><i class="fas fa-check"></i> Format vertical</p>
+                        </div>
+                        <div class="service-price">5 à 15 €</div>
                     </div>
                     
                     <!-- Service 3 -->
                     <div class="service-card fade-up">
                         <div class="service-icon">
-                            <i class="fas fa-crown"></i>
+                            <i class="fab fa-youtube"></i>
                         </div>
-                        <h3 class="service-title">⭐ Pack YouTube Pro</h3>
-                        <p class="service-description">Montage complet type vidéaste pro : transitions avancées, sound design, titrage premium, effets visuels.</p>
-                        <div class="service-price">60 à 120 €</div>
+                        <h3 class="service-title">🎯 Pack YouTube Débutant</h3>
+                        <div class="service-features">
+                            <p><i class="fas fa-check"></i> Montage propre et fluide</p>
+                            <p><i class="fas fa-check"></i> Cuts précis</p>
+                            <p><i class="fas fa-check"></i> Musique adaptée</p>
+                            <p><i class="fas fa-check"></i> Optimisation du rythme</p>
+                        </div>
+                        <div class="service-price">20 à 40 €</div>
                     </div>
                     
                     <!-- Service 4 -->
                     <div class="service-card fade-up">
                         <div class="service-icon">
-                            <i class="fas fa-gamepad"></i>
+                            <i class="fas fa-crown"></i>
                         </div>
-                        <h3 class="service-title">🎮 Pack Gaming</h3>
-                        <p class="service-description">Montages dynamiques, effets impact, sync sur musique, transitions fluides pour vos meilleurs moments gaming.</p>
-                        <div class="service-price">25 à 60 €</div>
+                        <h3 class="service-title">⭐ Pack YouTube Pro</h3>
+                        <div class="service-features">
+                            <p><i class="fas fa-check"></i> Montage complet type pro</p>
+                            <p><i class="fas fa-check"></i> Transitions avancées</p>
+                            <p><i class="fas fa-check"></i> Sound design</p>
+                            <p><i class="fas fa-check"></i> Titrage premium</p>
+                            <p><i class="fas fa-check"></i> Finition haut de gamme</p>
+                        </div>
+                        <div class="service-price">60 à 120 €</div>
                     </div>
                     
                     <!-- Service 5 -->
                     <div class="service-card fade-up">
                         <div class="service-icon">
+                            <i class="fas fa-gamepad"></i>
+                        </div>
+                        <h3 class="service-title">🎮 Pack Gaming</h3>
+                        <div class="service-features">
+                            <p><i class="fas fa-check"></i> Montages gaming dynamiques</p>
+                            <p><i class="fas fa-check"></i> Effets impact</p>
+                            <p><i class="fas fa-check"></i> Synchronisation sur la musique</p>
+                            <p><i class="fas fa-check"></i> Highlights stylés et rythme rapide</p>
+                        </div>
+                        <div class="service-price">25 à 60 €</div>
+                    </div>
+                    
+                    <!-- Service 6 -->
+                    <div class="service-card fade-up">
+                        <div class="service-icon">
                             <i class="fas fa-image"></i>
                         </div>
                         <h3 class="service-title">🖼️ Miniatures YouTube</h3>
-                        <p class="service-description">Miniatures propres et optimisées pour le CTR, design accrocheur, textes impactants, visuels de qualité.</p>
-                        <div class="service-price">5 à 15 €</div>
+                        <div class="service-features">
+                            <p><i class="fas fa-check"></i> Miniatures propres, visibles</p>
+                            <p><i class="fas fa-check"></i> Optimisées pour le CTR</p>
+                            <p><i class="fas fa-check"></i> Option pack : 3 miniatures = -10%</p>
+                        </div>
+                        <div class="service-price">3 à 10 €</div>
+                    </div>
+                    
+                    <!-- Service 7 -->
+                    <div class="service-card fade-up">
+                        <div class="service-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h3 class="service-title">⚡ Options / Offres groupées</h3>
+                        <div class="service-features">
+                            <p><i class="fas fa-check"></i> 3 vidéos TikTok / Shorts = -10%</p>
+                            <p><i class="fas fa-check"></i> 2 vidéos Gaming = pack à 50 €</p>
+                            <p><i class="fas fa-check"></i> 1 vidéo + miniature = -5 €</p>
+                        </div>
+                        <div class="service-price">Sur devis</div>
                     </div>
                 </div>
             </div>
@@ -765,11 +833,13 @@
                                 <label for="service-type">Type de montage</label>
                                 <select id="service-type" name="service-type" required>
                                     <option value="">Sélectionnez un service</option>
+                                    <option value="decouverte-tiktok">Pack Découverte TikTok / Shorts</option>
                                     <option value="tiktok">Pack TikTok / Shorts</option>
-                                    <option value="youtube-standard">Pack YouTube Standard</option>
+                                    <option value="youtube-debutant">Pack YouTube Débutant</option>
                                     <option value="youtube-pro">Pack YouTube Pro</option>
                                     <option value="gaming">Pack Gaming</option>
                                     <option value="thumbnails">Miniatures YouTube</option>
+                                    <option value="offres-groupées">Options / Offres groupées</option>
                                 </select>
                             </div>
                             <div class="form-group">
